@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haryana MSME</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>   
+<body>
+
+<!--                                                    LOGO BAR                                        -->
+    <section class="logoBar">
+        <img id="govLogo" src="img/govOfHaryanaLogo.png">
+        <p>सूक्ष्म, लघु एवं मध्यम उद्यम निदेशालय</p>
+        <h1>Directorate of Micro, Small & Medium Enterprises</h1>
+        <img id="MSMElogo" src="img/directorateOfMSMElogo.png">
+    </section>
+
+
+<!--                                                    NAV BAR                                         -->
+    <nav class="navBar">
+        <a href="#carousel">Home</a>
+        <a href="#">About Us</a>
+        <a href="#schemes">Schemes</a>
+        <a href="apply1.html">Apply</a>
+        <a href="#">Facilitation Helpdesk</a>
+        <a href="#">Grievances</a>
+        <a href="#">Feedback</a>
+    </nav>
+
+<!--                                                    CAROUSEL                                        -->
+    <section class="carousel">    
+        <div class="carousel-container">
+            <div class="mySlides fade">
+                <img src="img/carousel1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/carousel2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/carousel3.jpg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <br>
+        
+        <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) 
+            {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) 
+            {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) 
+                {
+                    slideIndex = 1
+                }
+                if (n < 1) 
+                {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) 
+                {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </section>
+
+
+<!--                                                LIST OF SCHEMES                                         -->
+    <section id="schemes" class="schemes">
+        <hr>
+        <img src="img/schemesBg4edited.jpg">
+        <h1><strong>MSME SCHEMES</strong></h1>
+
+        <ul class="schemesList">
+            <div class="firstContainer">
+                <li>Haryana Enterprises & Employment Policy</li>
+                <li>Technology Acquisition Scheme </li>
+                <li>Assistance for Environment Compliance</li> 
+                <li>SME Exchange Equity scheme </li>
+                <li>Electricity Duty Exemption </li>
+                <li>Testing Equipment Assistance Scheme</li> 
+                <li>Market Development Assistance Scheme </li>
+                <li>Patent Registration Scheme </li>
+                <li>Energy Conservation Scheme </li>
+                <li>Water Conservation Scheme </li>
+                <li>Stamp Duty Refund Scheme </li>
+                <li>Quality Certification Assistance Scheme</li> 
+            </div>
+
+            <div class="secondContainer">
+                <li>Revised Investment Subsidy on SGST </li>
+                <li>Freight Assistance Scheme </li>
+                <li>Credit Rating Scheme </li>
+                <li>Safety Compliance Scheme </li>
+                <li>Generator Set Subsidy Scheme </li>
+                <li>Research & Dev Center Scheme </li> 
+                <li>Handicraft Awards Scheme </li>
+                <li>State Export Awards Scheme </li>
+                <li>Power Tariff </li>
+                <li>Interest subsidy </li>
+                <li>Employment Generation</li> 
+                <li>Haryana Gramin Udyogik Vikas Yojna</li> 
+                
+            </div>
+
+            <div class="thirdContainer">
+                <li>Investment subsidy on SGST </li>
+                <li>Block and Panchayat Mapping HEEP 2020 </li>
+                <li>Assistance for Waste Management - 2021 </li> 
+                <li>Mini Cluster Development Scheme </li>
+                <li>EDC Scheme </li>
+                <li>Infrastructure Industrial Development Scheme </li> 
+                <li>Special Provisions for Start-ups </li>
+                <li>State Awards for outstanding entrepreneur in Service </li> 
+                <li>Scheme of State Award for Quality Products </li>
+                <li>Scheme of State Award for Product Process Innovation </li> 
+                <li>Scheme of State Award for outstanding entrepreneur in Manufacturing</li> 
+                <li>Scheme of State Award for Lean Manufacturing Technique</li>
+            </div>
+
+            <div class="fourthContainer">
+                
+                <li>State Credit Linked Interest Subsidy for Technology Upgradation</li>
+                <li>Haryana Backward and Forward Linkage scheme		</li>
+                <li>Creation Expansion Diversification of Individual Agro & Food Processing Units		</li>
+                <li>Integrated Mini food park scheme</li>
+                <li>Haryana AatmaNirbhar Textile Policy 2022-2025</li>
+                <li>Haryana Pharmaceutical Policy - 2019 </li>
+                <li>Capital subsidy scheme under The Haryana Pharmaceutical Policy</li>
+                <li>Logistics, Warehousing & Retail Policy - 2019</li>
+            </div>
+        </ul>
+
+    </section>
+
+    <button class="applyBtn" onclick="openForm()">APPLY</button>
+
+    <script>
+        function openForm() 
+        {
+            document.location.href="apply1.html";
+        }
+    </script>
+
+
+<!--                                        FOOTER                                  -->
+<section class="footer">
+        <h3>FOOTER</h3>
+</section>
+
+
+</body>

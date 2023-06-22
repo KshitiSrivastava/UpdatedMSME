@@ -1,0 +1,179 @@
+body
+{
+    font-size: 1rem;
+}
+
+#govLogo
+{
+    position: absolute;
+    margin-left: 6rem;
+}
+
+.logoBar > p
+{
+    position: absolute;
+    font-size: 1.0625rem;
+    line-height: 1.125rem;
+    margin-left: 12rem;
+    margin-top: 2rem;
+}
+
+.logoBar > h1
+{
+    position: absolute;
+    font-size: 1.5313rem;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 12rem;
+    margin-top: 3.2rem;
+}
+
+#MSMElogo
+{
+    float: right;
+    margin-right: 12rem;
+    margin-top: 1.5rem;
+    width: 5.75rem;
+    height: 5.25rem;
+}
+
+
+/*                          NAV BAR                        */
+.navBar
+{
+    position: absolute;
+    background-color: #2AACEA;
+    height: 1.5rem;
+    width: 94rem;
+    padding-top: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+}
+
+.navBar > a
+{
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+h1
+{
+    margin-left: 7rem;
+    margin-top: 14rem;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5625rem;
+    line-height: 2rem;
+    width: 80rem;
+}
+
+.form 
+{
+    position: absolute;
+    top: 19rem;
+    width: 50rem;
+}
+
+h3
+{
+    margin-left: 7rem;
+    margin-top: 4rem;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.form-container 
+{
+    font-family: "Open Sans", sans-serif;
+
+    position: absolute;
+    padding: 0.3125rem;
+    height: 30rem;
+    margin-left: 7rem;
+}
+  
+input[type=text], input[type=email], input[type=number], input[type=date]
+{
+    width: 50rem;
+    padding: 0.9375rem;
+    margin: 0.9375rem 0 1.375rem 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+#state
+{
+    width: 52rem;
+    padding: 0.9375rem;
+    margin: 0.9375rem 0 1.375rem 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+.btnContainer
+{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-direction: row;
+    margin-left: 55rem;
+    margin-top: 3rem
+
+}
+
+.prevBtn
+{
+    cursor: pointer;
+    background-color: #2AACEA;
+    opacity: 1;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    border: none;
+    position: absolute;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    /* border-radius: 10%; */
+    font-weight: 600;
+    line-height: 1rem;
+
+}
+
+.nextBtn
+{
+    cursor: pointer; 
+    background-color: #2AACEA;
+    opacity: 1;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    border: none;
+    position: absolute;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 10rem;
+    line-height: 1rem;
+}
+
+/*                              FOOTER                   */
+.footer
+{
+    background-color: #2A2A2A;
+    height: 10rem;
+    width: 94rem;
+    position: absolute;
+    margin-top: 120rem;
+    color: white;
+}
+
+.footer > h3
+{
+    margin-left: 43rem;
+    margin-top: 5rem;
+}
